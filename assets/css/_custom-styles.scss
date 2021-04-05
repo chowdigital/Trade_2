@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    //background-color: #464646;
+    background-color: $green-base;
     //background: url('http://localhost:8888/BlackBook/wp-content/uploads/2020/08/copper.png') no-repeat 50% fixed / cover;
 }
 
@@ -28,6 +28,13 @@ body {
 
 .top-nav-collapse {
     background: $black-base!important;
+  
+}
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: $black-base;
+}
+.navbar.navbar-dark.top-nav-collapse .navbar-nav .nav-item .nav-link {
+    color: $white-base;
 }
 
 .navbar {
@@ -111,14 +118,14 @@ footer {
 
 // Full screen video Template CSS
 .btn-rounded {
-    background: #8B634B;
+    background: $orange-base;;
     padding: 20px 20px;
     border-radius: 40px;
 }
 
 // Hightlight Book BTN
 .book-btn {
-    background: #8B634B;
+    background: $orange-base;
 
 }
 
@@ -143,14 +150,11 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
     }
 }
 
-.white-content-box {
-    background-color:rgba(0, 0, 0, 0.8);
+.home-content-box {
+    background-color: none;
     width: 100%;
     padding: 2rem;
-    -webkit-box-shadow: 0 0 0 1px #e5e5e5 inset;
-    box-shadow: 0 0 0 1px #fff inset;
-    border: 1rem solid rgba(0, 0, 0, 0.8);
-    color: #fff;
+    color:$black-base;
 }
 @include media-breakpoint-up(lg) {
     .white-content-box {
@@ -175,12 +179,9 @@ background: linear-gradient(180deg, rgba(0,0,0,0.7077031496192228) 0%, rgba(0,0,
 }
 
 .menu-content-box {
-    background-color: $black-base;
+    background: url('<?php echo get_template_directory_uri(); ?>/dog.jpg') no-repeat 50% fixed / cover;
     padding: 2rem;
-    -webkit-box-shadow: 0 0 0 1px #e5e5e5 inset;
-    box-shadow: 0 0 0 1px #fff inset;
-    border: 1rem solid $black-base;
-    color: #fff;
+    color: $black-base;
 }
 
 .btn-80 {
@@ -197,7 +198,7 @@ footer {
 }
 .black-background {
     margin-top:2em;
-    background: #000;
+    background: $black-base;
 }
 @media (min-width: 768px) {
     .text-footer-responsive{

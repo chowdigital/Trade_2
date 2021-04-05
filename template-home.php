@@ -17,7 +17,7 @@
 
     <!--Grid row-->
     <div class="row wow fadeIn">
-      <div class="white-content-box text-center">
+      <div class="home-content-box text-center">
       
       <h3>Welcome to</h3>
       <h1>Trade Hospitality</h1>
@@ -52,16 +52,8 @@
       <div class="menu-image-box col-12 col-lg-6" style="background-image: url(<?php the_post_thumbnail_url(); ?>); background-repeat: no-repeat; background-position: center; background-size: cover;">
       
       </div>
-      <div class="menu-content-box col-12 col-lg-6">
-      <header class="entry-header">
-	          	<?php the_title( '<h1>', '</h1>' ); ?>
-	    </header><!-- .entry-header -->
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-          the_content();
-          endwhile; else: ?>
-          <p>Sorry, no posts matched your criteria.</p>
-          <?php endif; ?>
-
+      <div class="menu-content-box col-12 col-lg-6"  style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/copper.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+   <h2>It's the Free App for Hospitality Professionals</h2>
       </div>
     </div>
   </div>

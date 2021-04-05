@@ -52,24 +52,12 @@
       
       </div>
       <div class="menu-content-box col-12 col-lg-6">
-      <header class="entry-header">
-	          	<?php the_title( '<h1>', '</h1>' ); ?>
-	    </header><!-- .entry-header -->
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-          the_content();
-          endwhile; else: ?>
-          <p>Sorry, no posts matched your criteria.</p>
-          <?php endif; ?>
-
+      
       </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row col-lg-6 offset-lg-3">
-      <img id="full-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/TBB_Full_Logo_Dark.png" alt="Black Book Soho Logo">
-    </div>
-  </div>
+  
 </main><!-- #main -->
 
 
