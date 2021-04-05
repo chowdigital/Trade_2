@@ -4,7 +4,7 @@
 <div class="view full-page-intro z-depth-3">
 
 <video playsinline autoplay muted loop id="myVideo" class="view full-page-intro">
-  		<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/trade.mp4" type="video/mp4">
+  		<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.mp4" type="video/mp4">
   			<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.webm" type="video/webm">
   				<source src="<?php echo get_template_directory_uri(); ?>/assets/img/video/blackbook_1.0.ogg" type="video/ogg">
 		 </video>
@@ -18,11 +18,10 @@
     <!--Grid row-->
     <div class="row wow fadeIn">
       <div class="white-content-box text-center">
-      
-      <h3>Welcome to</h3>
-      <h1>Trade Hospitality</h1>
-      <h3>Connecting the Hospitality Community</h3>
-    
+      <h1><?php the_field('welcome_title'); ?></h1>
+      <p><?php the_field('welcome_body'); ?></p>
+      <button type="button" class="btn btn-primary waves-effect waves-light">Book A Table</button>
+
       </div>
       
     </div>
